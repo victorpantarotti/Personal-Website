@@ -1,0 +1,22 @@
+.title {
+    position: relative;
+    font-size: 28px;
+}
+
+.title::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    top: 100%;
+    left: 0;
+    margin-top: 10px;
+    background-color: var(--secondaryColor);
+    border-radius: 3px;
+}
+
+.right { float: right; }
+.right::after { 
+    left: auto;
+    right: 0; 
+}

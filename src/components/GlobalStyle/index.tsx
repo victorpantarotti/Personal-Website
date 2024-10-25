@@ -12,9 +12,22 @@ const GlobalStyle = () => {
             font-style: normal;
         }
 
+        :root {
+            --backgroundColor: #212121;
+            --secondaryColor: #C20B0B;
+            --textColor: white;
+        }
+
+        * { box-sizing: border-box; }
+
         html, body { height: 100%; }
         
-        body { 
+        body {
+            background-color: var(--backgroundColor);
+            background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 0);
+            background-size: 50px 50px;
+            background-position: -19px -19px;
+            color: var(--textColor);
             font-family: "Sora";
         }
 

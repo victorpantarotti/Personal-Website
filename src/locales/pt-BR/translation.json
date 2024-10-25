@@ -1,0 +1,13 @@
+{
+    "header": {
+        "homeLink": "Início",
+        "aboutMeLink": "Sobre mim",
+        "projectsLink": "Projetos",
+        "postsLink": "Posts"
+    },
+    "home": {
+        "greeting": "eae :)",
+        "greetingCompliment": "tranquilo?",
+        "whoAmITitle": "Quem sou eu?"
+    }
+}
