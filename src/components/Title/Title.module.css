@@ -9,14 +9,19 @@
     width: 50px;
     height: 3px;
     top: 100%;
-    left: 0;
     margin-top: 10px;
     background-color: var(--secondaryColor);
     border-radius: 3px;
 }
 
+.left { float: left; }
+.left::after { 
+    right: auto;
+    left: 0;
+}
+
 .right { float: right; }
 .right::after { 
     left: auto;
-    right: 0; 
+    right: 0;
 }

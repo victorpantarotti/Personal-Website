@@ -1,7 +1,11 @@
 import Translator from "@/components/Translator";
+import Title from "@/components/Title";
+import MainContainer from "@/components/MainContainer";
+import ProjectsContainer from "@/components/ProjectsContainer";
+
+import myPhoto from "@/assets/myPhoto.png";
 
 import styles from "./Home.module.css";
-import Title from "@/components/Title";
 
 function Home() {
     return (
@@ -14,14 +18,11 @@ function Home() {
             </section>
             <section className={styles.whoAmI}>
                 <Title text={<Translator path="home.whoAmITitle" />} />
-                <div className={styles.mainContainer}>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                </div>
+                <MainContainer myPhoto={myPhoto} text={<Translator path="home.whoAmIText" />} />
+            </section>
+            <section className={styles.projects}>
+                <Title text={<Translator path="header.projectsLink" />} />
+                <ProjectsContainer numItems={3} />
             </section>
         </main>
     );

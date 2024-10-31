@@ -1,12 +1,4 @@
-section {
-    padding: 20px 80px;
-}
-
-.mainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
+section { padding: 20px 80px; }
 
 .greeting {
     height: 108vh;
@@ -38,4 +30,8 @@ section {
     margin: 0;
     font-weight: 100;
     font-size: 32px;
+}
+
+@media screen and (max-width: 690px) {
+    section { padding: 20px 40px; }
 }

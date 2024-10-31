@@ -1,0 +1,36 @@
+.projectsContainer {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.projectsContainer .card {
+    position: relative;
+    width: 30%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.projectsContainer .card .cover {
+    height: 260px;
+    background-position: center;
+    background-size: cover;
+}
+
+.projectsContainer .card .cover div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projectsContainer .card .cover img { width: 25%; }

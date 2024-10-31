@@ -1,0 +1,74 @@
+.mainContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mainContainer > div { margin-top: 20px; }
+
+.mainContainer .images {
+    position: relative;
+    width: 30%;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.mainContainer .images > .myPhoto {
+    position: relative;
+    width: 80%;
+    left: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+.mainContainer .images:hover {
+    animation: ghostEffect 3s infinite reverse 0.5s;
+}
+
+.mainContainer .images > .gradientCircle {
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 25%;
+    bottom: 25%;
+}
+
+.mainContainer .text {
+    flex: 1;
+    font-size: 18px;
+}
+
+.mainContainer .text > p { margin: 0; }
+
+@media screen and (max-width: 1024px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainContainer > div:last-child { margin-top: 0; }
+    .mainContainer .images { width: 60%; }
+}
+
+@media screen and (max-width: 690px) {
+    .mainContainer .images { width: 100%; }
+}
+
+@keyframes ghostEffect {
+    0% {
+        transform: translateY(10px);
+        transform: translateY(5px);
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0px);
+        transform: translateY(5px);
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px);
+        transform: translateY(5px);
+        transform: translateY(0px);
+    }
+}

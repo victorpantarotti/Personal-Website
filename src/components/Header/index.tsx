@@ -1,9 +1,17 @@
 import { Link } from "react-router-dom";
 import Translator from "../Translator";
 
+import { MdTranslate } from "react-icons/md";
+
 import styles from "./Header.module.css";
+import { CgSun } from "react-icons/cg";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
+    const { i18n } = useTranslation();
+
+    const handleChangeLanguage = () => i18n.changeLanguage(i18n.language === "pt-BR" ? "en-US" : "pt-BR");
+
     return (
         <header className={styles.header}>
             <p>victorpantarotti</p>
@@ -27,6 +35,18 @@ const Header = () => {
                     <Link to="/" className={styles.links}>
                         <Translator path="header.postsLink" />
                     </Link>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <button onClick={handleChangeLanguage}>
+                        <MdTranslate />
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <CgSun />
+                    </button>
                 </li>
             </ul>
         </header>
