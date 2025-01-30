@@ -1,16 +1,17 @@
 .projectsContainer {
     display: flex;
     width: 100%;
+    margin-top: 85px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: 20px;
+    gap: 50px;
 }
 
 .projectsContainer .card {
     position: relative;
-    width: 30%;
+    min-width: 30%;
     border-radius: 15px;
     overflow: hidden;
 }

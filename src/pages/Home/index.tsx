@@ -24,6 +24,10 @@ function Home() {
                 <Title text={<Translator path="header.projectsLink" />} />
                 <ProjectsContainer numItems={3} />
             </section>
+            <section className={styles.skills}>
+                <Title text={<Translator path="components.SkillsContainer.title" />} />
+                
+            </section>
         </main>
     );
 }

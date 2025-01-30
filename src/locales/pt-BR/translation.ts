@@ -30,6 +30,9 @@ export default {
         MainContainer: {
             gradientCircleAlt: "Circulo Gradiente",
             myPhotoAlt: "Foto do Victor"
+        },
+        SkillsContainer: {
+            title: "Habilidades"
         }
     }
 };
