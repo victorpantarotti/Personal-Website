@@ -4,7 +4,7 @@ import { useTranslator } from "@/utils";
 
 import gradientCircle from "@/assets/gradientCircle.png";
 
-import styles from "./MainContainer.module.css";
+import styles from "./MainContainer.module.scss";
 
 interface MainContainerProps {
     myPhoto: string,

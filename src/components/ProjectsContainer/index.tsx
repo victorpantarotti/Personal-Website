@@ -3,7 +3,7 @@ import projects from "@/db/projects";
 import { useTranslator } from "@/utils";
 import logo from "@/assets/Savey-NoBGLogo.png";
 
-import styles from "./ProjectsContainer.module.css";
+import styles from "./ProjectsContainer.module.scss";
 
 const ProjectsContainer = ({ numItems }: { numItems?: number }) => {
     return (

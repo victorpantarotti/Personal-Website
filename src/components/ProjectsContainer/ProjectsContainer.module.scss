@@ -1,0 +1,38 @@
+.projectsContainer {
+    display: flex;
+    width: 100%;
+    margin-top: 85px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+
+    .card {
+        position: relative;
+        min-width: 250px;
+        flex: 1 1 30%;
+        border-radius: 15px;
+        overflow: hidden;
+
+        .cover {
+            height: 280px;
+            background-position: center;
+            background-size: cover;
+
+            div {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.75);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            img { width: 25%; }
+        }
+    }
+}

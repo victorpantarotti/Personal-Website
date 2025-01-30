@@ -1,13 +1,5 @@
 import { useTranslation } from 'react-i18next';
 
-interface TranslatorProps {
-  path: string
-}
-
-const Translator = ({ path }: TranslatorProps) => {
-  const { t } = useTranslation();
-
-  return t(path);
-};
+const Translator = ({ path }: { path: string }) => useTranslation().t(path);
 
 export default Translator;

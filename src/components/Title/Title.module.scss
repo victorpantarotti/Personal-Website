@@ -1,0 +1,33 @@
+.title {
+    position: relative;
+    font-size: 28px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 3px;
+        top: 100%;
+        margin-top: 10px;
+        background-color: var(--secondaryColor);
+        border-radius: 3px;
+    }
+}
+
+.left {
+    float: left;
+
+    &::after { 
+        right: auto;
+        left: 0;
+    }
+}
+
+.right {
+    float: right;
+
+    &::after { 
+        left: auto;
+        right: 0;
+    }
+}

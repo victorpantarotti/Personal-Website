@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
-import Translator from "../Translator";
+// import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+// import Translator from "../Translator";
 
+// import { CgSun } from "react-icons/cg";
 import { MdTranslate } from "react-icons/md";
 
-import styles from "./Header.module.css";
-import { CgSun } from "react-icons/cg";
-import { useTranslation } from "react-i18next";
+import styles from "./Header.module.scss";
 
 const Header = () => {
     const { i18n } = useTranslation();
@@ -15,7 +15,7 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <p>victorpantarotti</p>
-            <ul>
+            {/* <ul>
                 <li>
                     <Link to="/" className={styles.links}>
                         <Translator path="header.homeLink" />
@@ -36,18 +36,18 @@ const Header = () => {
                         <Translator path="header.postsLink" />
                     </Link>
                 </li>
-            </ul>
+            </ul> */}
             <ul>
                 <li>
                     <button onClick={handleChangeLanguage}>
                         <MdTranslate />
                     </button>
                 </li>
-                <li>
+                {/* <li>
                     <button>
                         <CgSun />
                     </button>
-                </li>
+                </li> */}
             </ul>
         </header>
     );

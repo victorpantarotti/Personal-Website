@@ -1,4 +1,4 @@
-// add "logo"
+// add "logo" and make it optional on the component
 
 export default [
     {

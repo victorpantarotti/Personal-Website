@@ -1,0 +1,85 @@
+.mainContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    gap: 20px;
+
+    & > div { margin-top: 20px; }
+
+    .images {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+
+        & > .myPhoto {
+            position: relative;
+            width: 80%;
+            left: 0;
+            bottom: 0;
+            border-radius: 50%;
+        }
+
+        & > .gradientCircle {
+            position: absolute;
+            width: 70%;
+            top: 0;
+            left: 25%;
+            bottom: 25%;
+        }
+        
+        &:hover {
+            animation: ghostEffect 3s infinite reverse 0.5s;
+        }
+    }
+
+    .text { 
+        font-size: 18px; 
+        
+        & > p { margin: 0; }
+    }
+    
+    @media screen and (max-width: 1280px) {
+        grid-template-columns: 1fr 1fr;
+        
+        .text {
+            font-size: 16px;
+            align-self: center;
+        }
+    }
+    
+    @media screen and (max-width: 1080px) {
+        grid-template-columns: auto;
+        grid-template-areas: "photo" "text";
+
+        .images { 
+            width: 50%;
+            justify-self: center;
+            grid-area: photo;
+        }
+        
+        .text { grid-area: text; }
+    }
+
+    @media screen and (max-width: 630px) {
+        .images { width: 75%; }
+    }
+}
+
+@keyframes ghostEffect {
+    0% {
+        transform: translateY(10px);
+        transform: translateY(5px);
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(0px);
+        transform: translateY(5px);
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px);
+        transform: translateY(5px);
+        transform: translateY(0px);
+    }
+}
