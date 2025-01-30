@@ -10,13 +10,13 @@
 
     .card {
         position: relative;
-        min-width: 250px;
-        flex: 1 1 30%;
+        min-width: 40vw;
+        flex-shrink: 1;
         border-radius: 15px;
         overflow: hidden;
 
         .cover {
-            height: 280px;
+            height: 30vh;
             background-position: center;
             background-size: cover;
 

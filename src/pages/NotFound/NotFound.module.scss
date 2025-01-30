@@ -1,0 +1,42 @@
+.wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+
+    .container {
+        width: 80%;
+
+        .title {
+            h1 { font-size: 10rem !important; }
+        }
+        
+        .mobileTitle {
+            display: none;
+            font-family: "Sora";
+            font-size: 3rem;
+        }
+
+        .button {
+            background-color: transparent;
+            color: white;
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 8px;
+            transition: .5s;
+
+            &:hover {
+                background-color: white;
+                color: black;
+                cursor: pointer;
+            }
+        }
+        
+        @media screen and (max-width: 450px) {
+            .title { display: none; }
+            .mobileTitle { display: block; }
+        }
+    }
+}

@@ -1,13 +1,14 @@
 import { RouteObject } from "react-router-dom";
+
 import Layout from "./components/Layout";
-import ErrorPage from "./pages/ErrorPage";
+import NotFound from "./pages/NotFound";
 import Home from "./pages/Home";
 
 const routes: RouteObject[] = [
     {
         path: "/",
         element: <Layout />,
-        errorElement: <ErrorPage />,
+        errorElement: <NotFound />,
         children: [
             {
                 index: true,
