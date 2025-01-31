@@ -6,7 +6,8 @@ export default {
         home: "Início",
         aboutMe: "Sobre mim",
         projects: "Projetos",
-        posts: "Posts"
+        posts: "Posts",
+        skills: "Habilidades"
     },
     home: HomePage,
     notFound: NotFoundPage,
@@ -24,9 +25,6 @@ export default {
         MainContainer: {
             gradientCircleAlt: "Circulo Gradiente",
             myPhotoAlt: "Foto do Victor"
-        },
-        SkillsContainer: {
-            title: "Habilidades"
         }
     }
 };

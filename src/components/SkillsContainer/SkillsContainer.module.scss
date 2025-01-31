@@ -1,0 +1,27 @@
+.skills {
+    display: block;
+    width: 100%;
+    height: min-content;
+    overflow: auto;
+    white-space: nowrap;
+    cursor: grab;
+    user-select: none;
+    
+    .skill {
+        display: inline;
+        margin-right: 20px;
+        
+        img {
+            width: 10%;
+            height: auto;
+            user-select: none;
+        }
+    }
+
+    &:active {
+        cursor: grabbing;
+    }
+
+    &::-webkit-scrollbar { height: 3px; }
+    &::-webkit-scrollbar-thumb { background-color: var(--secondaryColor); }
+}

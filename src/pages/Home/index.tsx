@@ -2,6 +2,7 @@ import Translator from "@/components/Translator";
 import Title from "@/components/Title";
 import MainContainer from "@/pages/Home/components/MainContainer";
 import ProjectsContainer from "@/components/ProjectsContainer";
+import SkillsContainer from "@/components/SkillsContainer";
 
 import myPhoto from "@/assets/myPhoto.png";
 
@@ -21,12 +22,12 @@ function Home() {
                 <MainContainer myPhoto={myPhoto} text={<Translator path="home.whoAmIText" />} />
             </section>
             <section className={styles.projects}>
-                <Title><Translator path="header.projectsLink" /></Title>
+                <Title><Translator path="general.projects" /></Title>
                 <ProjectsContainer numItems={3} />
             </section>
             <section className={styles.skills}>
-                <Title><Translator path="components.SkillsContainer.title" /></Title>
-                
+                <Title><Translator path="general.skills" /></Title>
+                <SkillsContainer />
             </section>
         </main>
     );

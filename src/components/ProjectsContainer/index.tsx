@@ -13,7 +13,7 @@ const ProjectsContainer = ({ numItems }: { numItems?: number }) => {
 
                 const name = useTranslator(`projects.${e.id}.name`);
 
-                return <div className={styles.card}>
+                return <div key={i} className={styles.card}>
                     <div className={styles.cover} style={{ backgroundImage: `url(${e.image})` }}>
                         <div>
                             <img src={logo} alt={`${name}`} />
