@@ -16,6 +16,10 @@
             width: 10%;
             height: auto;
             user-select: none;
+
+            @media screen and (max-width: 470px) {
+                width: 25%;
+            }
         }
     }
 
