@@ -1,0 +1,12 @@
+.container {
+    text-align: center;
+
+    a {
+        color: var(--secondaryColor);
+        font-size: 5rem;
+        margin-right: 50px;
+        transition: .3s;
+
+        &:hover { color: white;}
+    }
+}

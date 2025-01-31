@@ -32,7 +32,7 @@ const SkillsContainer = () => {
         <div ref={containerRef} className={styles.skills} onMouseDown={handleMouseDown}>
             {skills.map((skill, i) => (
                 <div key={i} className={styles.skill} data-tooltip={skill.name}>
-                    <img src={skill.logo} alt={skill.name} draggable={false} />
+                    <img src={skill.logo} alt={skill.name} draggable={false} title={skill.name} />
                 </div>
             ))}
         </div>

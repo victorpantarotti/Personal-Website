@@ -3,6 +3,7 @@ import Title from "@/components/Title";
 import MainContainer from "@/pages/Home/components/MainContainer";
 import ProjectsContainer from "@/components/ProjectsContainer";
 import SkillsContainer from "@/components/SkillsContainer";
+import SocialsContainer from "./components/SocialsContainer";
 
 import myPhoto from "@/assets/myPhoto.png";
 
@@ -28,6 +29,10 @@ function Home() {
             <section className={styles.skills}>
                 <Title><Translator path="general.skills" /></Title>
                 <SkillsContainer />
+            </section>
+            <section className={styles.socials}>
+                <Title><Translator path="general.socials" /></Title>
+                <SocialsContainer />
             </section>
         </main>
     );
