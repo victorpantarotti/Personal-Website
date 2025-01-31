@@ -13,7 +13,7 @@ const SocialsContainer = () => {
                 <a href="https://www.instagram.com/victorhugobergano/">
                     <FaInstagram />
                 </a>
-                <a href="https://www.instagram.com/victorhugobergano/">
+                <a href="mailto:contato@victorpantarotti.com.br">
                     <MdOutlineEmail />
                 </a>
             </div>
