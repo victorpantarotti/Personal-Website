@@ -1,9 +1,9 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-import styles from "./SocialsContainer.module.scss";
+import styles from "./ContactContainer.module.scss";
 
-const SocialsContainer = () => {
+const ContactContainer = () => {
     return (
         <div className={styles.wrapper}>
             <div className={styles.grid}>
@@ -21,4 +21,4 @@ const SocialsContainer = () => {
     );
 };
 
-export default SocialsContainer;
+export default ContactContainer;

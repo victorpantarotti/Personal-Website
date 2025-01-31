@@ -8,7 +8,7 @@ import personalWebsiteImage from "@/assets/PersonalWebsite-screenshot.png";
 import giftlyLogo from "@/assets/Giftly-Logo.png";
 import giftlyImage from "@/assets/Giftly-screenshot.png";
 
-interface Project {
+export interface Project {
     id: string,
     logo: string,
     image: string,

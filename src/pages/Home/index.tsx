@@ -3,7 +3,7 @@ import Title from "@/components/Title";
 import MainContainer from "@/pages/Home/components/MainContainer";
 import ProjectsContainer from "@/components/ProjectsContainer";
 import SkillsContainer from "@/components/SkillsContainer";
-import SocialsContainer from "./components/SocialsContainer";
+import ContactContainer from "./components/ContactContainer";
 
 import myPhoto from "@/assets/myPhoto.png";
 
@@ -14,7 +14,8 @@ function Home() {
         <main>
             <section className={styles.greeting}>
                 <div className={styles.container}>
-                    <h1><Translator path="home.greeting" /></h1>
+                    <h3><Translator path="home.greeting" /></h3>
+                    <h1>Victor Hugo</h1>
                     <h3><Translator path="home.greetingCompliment" /></h3>
                 </div>
             </section>
@@ -30,9 +31,9 @@ function Home() {
                 <Title><Translator path="general.skills" /></Title>
                 <SkillsContainer />
             </section>
-            <section className={styles.socials}>
-                <Title><Translator path="general.socials" /></Title>
-                <SocialsContainer />
+            <section className={styles.contact}>
+                <Title><Translator path="general.contact" /></Title>
+                <ContactContainer />
             </section>
         </main>
     );

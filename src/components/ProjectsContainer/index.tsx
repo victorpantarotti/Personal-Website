@@ -25,10 +25,16 @@ const ProjectsContainer = ({ numItems }: { numItems?: number }) => {
                         <div className={styles.logoDiv}>
                             <img src={project.logo} alt={name} title={name} />
                         </div>
+                        <div className={styles.name}>
+                            <span>{name}</span>
+                        </div>
                         <div className={styles.devStatus}>
                             {project.devStatus === "public" && <FaGlobe title={publicTitle} /> }
                             {project.devStatus === "localhost" && <FaComputer title={localhostTitle} /> }
                             {project.devStatus === "development" && <FaTools title={developmentTitle} /> }
+                        </div>
+                        <div className={styles.devices}>
+
                         </div>
                         <a href={project.githubRepo} className={styles.github}>
                             <FaGithub title={seeRepoTitle} />

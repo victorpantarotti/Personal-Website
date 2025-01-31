@@ -8,7 +8,7 @@ export default {
         projects: "Projects",
         posts: "Posts",
         skills: "Skills",
-        socials: "Socials",
+        contact: "Contact",
         public: "Public",
         localhost: "Run locally",
         development: "In development",
@@ -22,12 +22,12 @@ export default {
             description: "A Simple Website and Android App to save Youtube Videos to watch later! Made with React, Typescript, Vite and Ionic."
         },
         personalWebsite: {
-            name: "Meu site",
+            name: "Personal Website",
             description: "My simple personal website! :)"
         },
         giftly: {
             name: "Giftly",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a est ante."
+            description: "A website/app to transform your texts into an experience!"
         }
     },
     components: {

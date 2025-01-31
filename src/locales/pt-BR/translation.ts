@@ -8,7 +8,7 @@ export default {
         projects: "Projetos",
         posts: "Posts",
         skills: "Habilidades",
-        socials: "Redes sociais",
+        contact: "Contato",
         public: "Público",
         localhost: "Rodar localmente",
         development: "Em desenvolvimento",
@@ -27,7 +27,7 @@ export default {
         },
         giftly: {
             name: "Giftly",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a est ante."
+            description: "Um aplicativo/site para transformar seus textos em uma experiência!"
         }
     },
     components: {
