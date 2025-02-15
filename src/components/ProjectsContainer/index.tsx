@@ -20,7 +20,7 @@ const ProjectsContainer = ({ numItems }: { numItems?: number }) => {
 
                 const name = useTranslator(`projects.${project.id}.name`);
 
-                return <a key={i} href={project.url ? project.url : project.githubRepo} className={styles.card}>
+                return <a key={i} href={project.url ? project.url : project.githubRepo} className={styles.card} target="_blank">
                     <div className={styles.cover} style={{ backgroundImage: `url(${project.image})` }}>
                         <div className={styles.logoDiv}>
                             <img src={project.logo} alt={name} title={name} />
@@ -36,7 +36,7 @@ const ProjectsContainer = ({ numItems }: { numItems?: number }) => {
                         <div className={styles.devices}>
 
                         </div>
-                        <a href={project.githubRepo} className={styles.github}>
+                        <a href={project.githubRepo} className={styles.github} target="_blank">
                             <FaGithub title={seeRepoTitle} />
                         </a>
                     </div>

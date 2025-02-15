@@ -25,6 +25,10 @@ export default {
             name: "Personal Website",
             description: "My simple personal website! :)"
         },
+        injemotorsWebsite: {
+            name: "Injemotors Website",
+            description: `A website made for the company "INJEMOTORS - Manutenção Automotiva"!`
+        },
         giftly: {
             name: "Giftly",
             description: "A website/app to transform your texts into an experience!"

@@ -25,7 +25,7 @@ function Home() {
             </section>
             <section className={styles.projects}>
                 <Title><Translator path="general.projects" /></Title>
-                <ProjectsContainer numItems={3} />
+                <ProjectsContainer />
             </section>
             <section className={styles.skills}>
                 <Title><Translator path="general.skills" /></Title>
